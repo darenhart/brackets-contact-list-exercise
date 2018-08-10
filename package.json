@@ -1,0 +1,23 @@
+{
+  "name": "brackets-contact-list-exercise",
+  "version": "1.0.0",
+  "description": "Angular and NodeJS exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darenhart/brackets-contact-list-exercise.git"
+  },
+  "author": "arenhart.daniel@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darenhart/brackets-contact-list-exercise/issues"
+  },
+  "homepage": "https://github.com/darenhart/brackets-contact-list-exercise#readme",
+  "dependencies": {
+    "hapi": "^17.5.3",
+    "mongoose": "^5.2.7"
+  }
+}
