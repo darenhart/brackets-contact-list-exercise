@@ -4,21 +4,16 @@ const Hapi = require('hapi');
 const mongoose = require('mongoose');
 const mongoDbUri = 'mongodb://localhost:27017/exercise';
 const peopleRoutes = require('./route/people.route');
-
-
+const contactRoutes = require('./route/contact.route');
 
 //connect with mongoDB
-mongoose.connect(mongoDbUri);
+mongoose.connect(mongoDbUri, { useNewUrlParser: true });
 mongoose.connection.on('connected', () => {
     console.log(`app is connected to ${mongoDbUri}`);
 });
 mongoose.connection.on('error', err => {
     console.log('error while connecting to mongodb', err);
 });
-
-
-
-
 
 // Create a server with a host and port
 const server = Hapi.server({
@@ -36,6 +31,7 @@ server.route({
 });
 
 server.route(peopleRoutes)
+server.route(contactRoutes)
 
 // Start the server
 async function start() {

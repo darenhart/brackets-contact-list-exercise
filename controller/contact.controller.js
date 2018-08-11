@@ -1,25 +1,27 @@
 'use strict'
 
-const People = require('../model/people.model');
+const Contact = require('../model/contact.model');
 
 module.exports = {
 
     create(req, h) {
-        const personData = {
-           name: req.payload.name
+        const contactData = {
+            person_id: req.payload.person_id,
+            type: req.payload.type,
+            value: req.payload.value,
         };
-        return People.create(personData).then((person) => {
+        return Contact.create(contactData).then((contact) => {
            return {
-               message: 'Person created successfully',
-               person: person
+               message: 'Contact created successfully',
+               contact: contact
            };
         }).catch((err) => {
            return h.response({err: err}).code(400);
         });
     },
     find(req, h) {
-        return People.find({}).then((people) => {
-            return h.response(people);
+        return Contact.find({}).then((contacts) => {
+            return h.response(contacts);
         }).catch((err) => {
             return h.response({err: err}).code(404);
         });
@@ -28,8 +30,8 @@ module.exports = {
         if (!req.params.id) {
             return h.response({err: 'id is required param'}).code(400);
         }
-        return People.findById(req.params.id).then((person) => {
-            return h.response(person);
+        return Contact.findById(req.params.id).then((contact) => {
+            return h.response(contact);
         }).catch((err) => {
             return h.response({err: err}).code(404);
         });
@@ -40,11 +42,14 @@ module.exports = {
         }
         let attributes = {};
 
-        if (req.payload.name) {
-           attributes.name = req.payload.name;
+        if (req.payload.type) {
+           attributes.type = req.payload.type;
         }
-        return People.findByIdAndUpdate(req.params.id, attributes, {new: true}).then((person) => {
-           return h.response(person);
+        if (req.payload.value) {
+           attributes.value = req.payload.value;
+        }
+        return Contact.findByIdAndUpdate(req.params.id, attributes, {new: true}).then((contact) => {
+           return h.response(contact);
         }).catch((err) => {
             return h.response({err: err}).code(500);
         });
@@ -53,8 +58,8 @@ module.exports = {
         if (!req.params.id) {
            return h.response({err: 'id is required param'}).code(400);
         }
-        return People.findByIdAndRemove(req.params.id).then((result) => {
-           return h.response({msg: `person has deleted with id ${req.params.id}`});
+        return Contact.findByIdAndRemove(req.params.id).then((result) => {
+           return h.response({msg: `contact has deleted with id ${req.params.id}`});
         }).catch((err) => {
             return h.response({err: err}).code(500);
         });
