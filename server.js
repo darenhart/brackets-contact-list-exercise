@@ -2,14 +2,14 @@
 
 const Hapi = require('hapi');
 const mongoose = require('mongoose');
-const mongoDbUri = 'mongodb://localhost:27017/exercise';
+const config = require('./config');
 const peopleRoutes = require('./route/people.route');
 const contactRoutes = require('./route/contact.route');
 
 //connect with mongoDB
-mongoose.connect(mongoDbUri, { useNewUrlParser: true });
+mongoose.connect(config.db, { useNewUrlParser: true });
 mongoose.connection.on('connected', () => {
-    console.log(`app is connected to ${mongoDbUri}`);
+    console.log(`app is connected to ${config.db}`);
 });
 mongoose.connection.on('error', err => {
     console.log('error while connecting to mongodb', err);

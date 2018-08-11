@@ -19,6 +19,7 @@
   "homepage": "https://github.com/darenhart/brackets-contact-list-exercise#readme",
   "dependencies": {
     "hapi": "^17.5.3",
+    "mongodb": "^3.1.1",
     "mongoose": "^5.2.7",
     "nodemon": "^1.18.3"
   }
