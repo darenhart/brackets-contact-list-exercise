@@ -1,29 +1,31 @@
 # brackets-contact-list-exercise
 Angular and NodeJS exercise
 
+## Install
+npm install
 
-mongo
+## Start
+npm start
+
+## mongo
 sudo systemctl status mongod
 sudo systemctl start mongod
 
 
-Docker
+## Docker
 https://docs.docker.com/get-started/
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
 
-Docker - mongo
+## Docker - mongo
 https://github.com/KrunalLathiya/DockerNodeMongo
 https://medium.com/statuscode/dockerising-a-node-js-and-mongodb-app-d22047e2806f
 
 
-install
-docker-compose
-
-
+`
 # list images
 docker image ls
-#list containers
+# list containers
 docker container ls --all
 # build image
 docker build -t darenhart/brackets-contact-list-exercise .
@@ -35,10 +37,13 @@ docker ps
 docker logs <container id>
 # stop container
 docker container stop <container id>
+`
 
+## docker-compose
+`
 # docker compose build
 docker-compose build
 # run docker compose
 docker-compose up
-
+`
 
