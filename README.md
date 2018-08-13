@@ -1,5 +1,4 @@
-# brackets-contact-list-exercise
-Angular and NodeJS exercise
+# Contact List backend using NodeJS
 
 ## Install
 npm install
