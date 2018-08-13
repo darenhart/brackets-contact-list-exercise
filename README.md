@@ -25,8 +25,8 @@ sudo systemctl start mongod
 ```
 
 ### Docker
-https://docs.docker.com/get-started/
-https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
+* https://docs.docker.com/get-started/
+* https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
 ```bash
 # list images
@@ -46,8 +46,8 @@ docker container stop <container id>
 ```
 
 ### docker-compose: nodejs + mongo
-https://github.com/KrunalLathiya/DockerNodeMongo
-https://medium.com/statuscode/dockerising-a-node-js-and-mongodb-app-d22047e2806f
+* https://github.com/KrunalLathiya/DockerNodeMongo
+* https://medium.com/statuscode/dockerising-a-node-js-and-mongodb-app-d22047e2806f
 
 ```bash
 # docker compose build
