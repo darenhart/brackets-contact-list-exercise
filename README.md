@@ -4,8 +4,8 @@
 `npm install`
 
 ## Start
-*Port 27017 must be available for mongo
-*Port 8000 must be available for NodeJS
+* Port 27017 must be available for mongo
+* Port 8000 must be available for NodeJS
 `npm start`
 
 ## API
