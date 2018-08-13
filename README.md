@@ -1,13 +1,13 @@
 # Contact List backend using NodeJS
 
 ## Install
-npm install
+`npm install`
 
 ## Start
-npm start
+`npm start`
 
 ## docker
-docker pull darenhart/brackets-contact-list-exercise:part1
+`docker pull darenhart/brackets-contact-list-exercise:part1`
 
 ## References and Cheat sheet
 
