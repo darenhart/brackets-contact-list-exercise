@@ -7,22 +7,19 @@ npm install
 ## Start
 npm start
 
-## mongo
+## References and Cheat sheet
+
+### mongo
+```
 sudo systemctl status mongod
 sudo systemctl start mongod
+```
 
-
-## Docker
+### Docker
 https://docs.docker.com/get-started/
 https://nodejs.org/en/docs/guides/nodejs-docker-webapp/
 
-
-## Docker - mongo
-https://github.com/KrunalLathiya/DockerNodeMongo
-https://medium.com/statuscode/dockerising-a-node-js-and-mongodb-app-d22047e2806f
-
-
-`
+```
 # list images
 docker image ls
 # list containers
@@ -37,13 +34,16 @@ docker ps
 docker logs <container id>
 # stop container
 docker container stop <container id>
-`
+```
 
-## docker-compose
-`
+### docker-compose: nodejs + mongo
+https://github.com/KrunalLathiya/DockerNodeMongo
+https://medium.com/statuscode/dockerising-a-node-js-and-mongodb-app-d22047e2806f
+
+```
 # docker compose build
 docker-compose build
 # run docker compose
 docker-compose up
-`
+```
 
