@@ -1,4 +1,7 @@
 # Contact List backend using NodeJS
+This project is a study/exercise of NodeJS/Mongo/Docker.
+The proposal is to provide an API to store and manipulate People and Contacts.
+A person can have multiple contacts(email/phone/whatsapp).
 
 ## Install
 `npm install`
@@ -18,6 +21,7 @@ docker-compose up
 ```
 
 ## References and Cheat sheet
+Those are some links and commands I needed during the development
 
 ### mongo
 ```bash
