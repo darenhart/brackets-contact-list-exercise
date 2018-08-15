@@ -17,6 +17,7 @@ A person can have multiple contacts(email/phone/whatsapp).
 
 
 ## docker
+TODO: the docker container is up but I can't access it
 ```bash
 docker-compose build
 docker-compose up
