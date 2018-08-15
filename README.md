@@ -14,13 +14,15 @@
 
 
 ## docker
+```bash
 docker-compose build
 docker-compose up
+```
 
 ## References and Cheat sheet
 
 ### mongo
-```
+```bash
 sudo systemctl status mongod
 sudo systemctl start mongod
 ```
