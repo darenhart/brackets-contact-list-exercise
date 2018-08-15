@@ -4,13 +4,11 @@
 `npm install`
 
 ## Start
-* Port 27017 must be available for mongo
-* Port 8000 must be available for NodeJS
 * `npm start`
 
 ## API
-- http://localhost:8000/api/people
-- http://localhost:8000/api/contact
+- http://localhost:8000/api/people [GET,POST,PUT,DELETE]
+- http://localhost:8000/api/contact [GET,POST,PUT,DELETE]
 
 
 ## docker
