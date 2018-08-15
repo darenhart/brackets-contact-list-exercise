@@ -14,7 +14,8 @@
 
 
 ## docker
-`docker pull darenhart/brackets-contact-list-exercise:part1`
+docker-compose build
+docker-compose up
 
 ## References and Cheat sheet
 
